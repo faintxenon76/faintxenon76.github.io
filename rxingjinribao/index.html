@@ -1,0 +1,1463 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>r星今日爆料-每日线索与传闻核对</title>
+<meta name="description" content="r星今日爆料栏目汇总2026年11月8日前后Rockstar Games的版本号、公告、财报措辞与社区线索，逐条标注传闻来源、确认状态与可核对证据，涵盖GTA6、GTA Online与RDR2更新动态。">
+<meta name="keywords" content="r星今日爆料">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1a12'/%3E%3Cpath d='M14 16h14l6 16 6-16h10L40 50h-8z' fill='%23f5b731'/%3E%3Ccircle cx='48' cy='46' r='6' fill='%23e8593c'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "r星今日爆料",
+  "inLanguage": "zh-CN",
+  "description": "Rockstar Games 每日版本号、公告与社区线索的核对栏目。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "GTA6 第三次延期公告是哪天发布的？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rockstar 官方 Newswire 在 2026 年 10 月 21 日发布过一份排期说明，把窗口表述从 2026 年秋季改写成 2027 年 3 月 19 日，该页面当天被存档账号截屏，目前仍可访问。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "GTA Online 11 月 5 日更新加了哪些资产？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "11 月 5 日的背景更新新增葛洛夫街两处车库租赁位，并调整了夜总会仓库的补货冷却，补丁号 1.72，下载体积约 2.4 GB。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "社区流传的 Vice City 地图碎片是真是假？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "10 月 28 日出现的六块地图拼接图目前没有官方来源，图幅比例与 2022 年泄露素材不一致，判定为推测级，暂不采信。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "RDR2 次世代补丁有没有原文公告？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rockstar 支持页 10 月 30 日条目只提到 Red Dead Online 的服务器合并，未出现次世代补丁字样，相关说法属于第三方转述。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "爆料里的版本号怎么自己核对？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "打开对应平台的补丁说明页面，比对构建号、发布日期与体积三项，三项对不上记为待核，不要只看截图里的数字。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "官方招聘页能当作项目进度证据吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "招聘岗位只能说明团队在补人，无法推出上线时间。例如 10 月 24 日挂出的七个岗位里，只有两个与动画相关，其余是发行与法务。"
+      }
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0d1510;
+  --bg-soft:#132019;
+  --bg-card:#16241c;
+  --line:#26382c;
+  --line-soft:#1e2f24;
+  --ink:#eaf3ec;
+  --ink-2:#b9cbbd;
+  --ink-3:#8da394;
+  --brand:#f5b731;
+  --brand-2:#e8593c;
+  --ok:#63c88b;
+  --warn:#e8b23c;
+  --hot:#e8683c;
+  --radius:14px;
+  --radius-sm:9px;
+  --sp:clamp(14px,2.4vw,26px);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --shadow:0 10px 28px rgba(0,0,0,.32);
+  --header-h:112px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:
+    radial-gradient(1100px 500px at 85% -10%, rgba(245,183,49,.10), transparent 60%),
+    radial-gradient(900px 480px at -10% 20%, rgba(232,89,60,.08), transparent 55%),
+    var(--bg);
+  color:var(--ink);
+  font-family:var(--font);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--brand);text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;letter-spacing:.2px;}
+p{margin:0 0 .85em;}
+ul,ol{margin:0 0 .9em;padding-left:1.2em;}
+li{margin-bottom:.35em;}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:4px;}
+
+/* 吸顶区 */
+.sticky-wrap{
+  position:sticky;
+  top:0;
+  z-index:60;
+}
+.announce{
+  background:linear-gradient(90deg,#1d2b1f,#2a1f14 60%,#2c1a15);
+  border-bottom:1px solid var(--line);
+  font-size:13.5px;
+  color:var(--ink-2);
+}
+.announce-in{
+  max-width:1240px;
+  margin:0 auto;
+  padding:7px var(--sp);
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.announce .tag{
+  background:var(--brand-2);
+  color:#1a0d08;
+  font-weight:700;
+  padding:1px 8px;
+  border-radius:999px;
+  font-size:12px;
+  letter-spacing:.5px;
+  white-space:nowrap;
+}
+.announce b{color:var(--ink);font-weight:600;}
+
+header.site{
+  background:rgba(13,21,16,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-in{
+  max-width:1240px;
+  margin:0 auto;
+  padding:10px var(--sp);
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:var(--ink);
+  flex:0 0 auto;
+}
+.brand:hover{text-decoration:none;}
+.brand svg{width:38px;height:38px;flex:0 0 auto;}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:.4px;}
+.brand-sub{display:block;font-size:11.5px;color:var(--ink-3);font-weight:400;letter-spacing:1.4px;}
+nav.main-nav{
+  display:flex;
+  gap:4px;
+  flex-wrap:wrap;
+  flex:1 1 auto;
+}
+nav.main-nav a{
+  color:var(--ink-2);
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:14.5px;
+  white-space:nowrap;
+}
+nav.main-nav a:hover{background:var(--bg-soft);color:var(--ink);text-decoration:none;}
+.head-actions{display:flex;gap:8px;align-items:center;flex:0 0 auto;}
+.search-box{
+  display:flex;
+  align-items:center;
+  background:var(--bg-soft);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:4px 6px 4px 12px;
+  gap:6px;
+}
+.search-box input{
+  background:transparent;
+  border:0;
+  color:var(--ink);
+  font-family:var(--font);
+  font-size:14px;
+  width:150px;
+  outline:none;
+}
+.search-box input::placeholder{color:var(--ink-3);}
+.search-box button{
+  border:0;
+  background:var(--brand);
+  color:#191207;
+  font-weight:700;
+  border-radius:999px;
+  padding:5px 12px;
+  font-size:13.5px;
+  cursor:pointer;
+  font-family:var(--font);
+}
+.search-box button:hover{background:#ffc94d;}
+.menu-btn{
+  display:none;
+  background:var(--bg-soft);
+  border:1px solid var(--line);
+  color:var(--ink);
+  border-radius:8px;
+  padding:7px 12px;
+  font-family:var(--font);
+  font-size:14px;
+  cursor:pointer;
+}
+.search-msg{
+  max-width:1240px;
+  margin:0 auto;
+  padding:0 var(--sp) 8px;
+  font-size:13.5px;
+  color:var(--warn);
+  display:none;
+}
+.search-msg.on{display:block;}
+
+/* 首屏 */
+.hero{
+  max-width:1240px;
+  margin:0 auto;
+  padding:clamp(26px,4vw,52px) var(--sp) clamp(20px,3vw,36px);
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:clamp(18px,3vw,40px);
+  align-items:center;
+}
+.hero-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+  color:var(--brand);
+  border:1px solid rgba(245,183,49,.35);
+  background:rgba(245,183,49,.07);
+  padding:4px 12px;
+  border-radius:999px;
+  margin-bottom:16px;
+  letter-spacing:.6px;
+}
+.hero h1{
+  font-size:clamp(30px,4.6vw,50px);
+  letter-spacing:1px;
+  margin-bottom:14px;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--brand);
+}
+.hero-lead{
+  color:var(--ink-2);
+  font-size:16.5px;
+  max-width:36em;
+  margin-bottom:22px;
+}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;}
+.btn{
+  display:inline-block;
+  padding:10px 20px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:15px;
+  border:1px solid transparent;
+  text-decoration:none;
+}
+.btn:hover{text-decoration:none;}
+.btn-primary{background:var(--brand);color:#1a1305;}
+.btn-primary:hover{background:#ffc94d;}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--bg-soft);}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand);}
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  max-width:430px;
+}
+.stat{
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-sm);
+  padding:10px 12px;
+}
+.stat b{display:block;font-size:20px;color:var(--brand);line-height:1.2;}
+.stat span{font-size:12px;color:var(--ink-3);}
+
+/* 原创视觉 */
+.hero-visual{
+  position:relative;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:
+    linear-gradient(160deg,#17251b,#101a14 55%,#1a1410);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  min-height:320px;
+}
+.hero-visual svg{width:100%;height:100%;display:block;}
+.visual-badge{
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  background:rgba(13,21,16,.82);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:8px 12px;
+  font-size:12.5px;
+  color:var(--ink-2);
+  max-width:230px;
+  line-height:1.5;
+}
+.visual-badge b{color:var(--brand);}
+
+/* 布局 */
+.layout{
+  max-width:1240px;
+  margin:0 auto;
+  padding:10px var(--sp) 60px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 300px;
+  gap:clamp(18px,3vw,36px);
+  align-items:start;
+}
+main{min-width:0;}
+aside.side{
+  position:sticky;
+  top:calc(var(--header-h) + 16px);
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.panel{
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius);
+  padding:16px 18px;
+}
+.panel h3{
+  font-size:14px;
+  color:var(--ink-3);
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+  font-weight:600;
+}
+.side-nav a{
+  display:block;
+  padding:7px 10px;
+  border-radius:8px;
+  color:var(--ink-2);
+  font-size:14.5px;
+  border-left:2px solid transparent;
+}
+.side-nav a:hover{background:var(--bg-soft);color:var(--ink);text-decoration:none;}
+.side-nav a.active{color:var(--brand);border-left-color:var(--brand);background:rgba(245,183,49,.07);}
+.side-nav small{color:var(--ink-3);font-size:12px;}
+
+section.block{
+  margin-bottom:clamp(26px,3.6vw,44px);
+  scroll-margin-top:calc(var(--header-h) + 18px);
+}
+.block-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+  border-bottom:1px solid var(--line-soft);
+  padding-bottom:10px;
+  margin-bottom:18px;
+}
+.block-head h2{
+  font-size:clamp(20px,2.4vw,25px);
+}
+.block-head .hint{font-size:13px;color:var(--ink-3);}
+
+/* 卡片 */
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.card{
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius);
+  padding:16px 18px;
+  transition:transform .18s ease,border-color .18s ease;
+}
+.card:hover{transform:translateY(-3px);border-color:var(--line);}
+.card h3{font-size:16.5px;margin-bottom:8px;}
+.card p{color:var(--ink-2);font-size:14.5px;margin-bottom:10px;}
+.card .meta{font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap;}
+.chip{
+  display:inline-block;
+  font-size:12px;
+  padding:1px 9px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  color:var(--ink-2);
+  background:var(--bg-soft);
+  white-space:nowrap;
+}
+.chip.ok{color:var(--ok);border-color:rgba(99,200,139,.4);}
+.chip.warn{color:var(--warn);border-color:rgba(232,178,60,.4);}
+.chip.hot{color:var(--hot);border-color:rgba(232,104,60,.4);}
+.chip.cool{color:var(--ink-3);}
+
+/* 带图卡片 */
+.media-card{
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:transform .18s ease,border-color .18s ease;
+}
+.media-card:hover{transform:translateY(-3px);border-color:var(--line);}
+.media-card img{
+  width:100%;
+  height:158px;
+  object-fit:cover;
+  border-bottom:1px solid var(--line-soft);
+}
+.media-card .body{padding:14px 16px 16px;}
+.media-card h3{font-size:16px;margin-bottom:6px;}
+.media-card p{font-size:14px;color:var(--ink-2);margin-bottom:8px;}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;margin:0;padding:0;}
+.tight-list li{
+  display:flex;
+  gap:12px;
+  padding:11px 0;
+  border-bottom:1px dashed var(--line-soft);
+  font-size:14.5px;
+  align-items:flex-start;
+}
+.tight-list li:last-child{border-bottom:0;}
+.tight-list time{
+  color:var(--ink-3);
+  font-size:12.5px;
+  flex:0 0 62px;
+  font-variant-numeric:tabular-nums;
+  padding-top:2px;
+}
+.tight-list .txt{flex:1;}
+.tight-list .txt b{color:var(--ink);font-weight:600;}
+.tight-list .txt span{color:var(--ink-2);}
+
+/* 分类索引 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.cat{
+  display:block;
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-sm);
+  padding:12px 14px;
+  color:var(--ink);
+  transition:border-color .18s ease,transform .18s ease;
+}
+.cat:hover{border-color:var(--brand);transform:translateY(-2px);text-decoration:none;}
+.cat b{display:block;font-size:14.5px;margin-bottom:2px;}
+.cat span{font-size:12.5px;color:var(--ink-3);}
+
+/* 深度解析 */
+.article{
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius);
+  padding:clamp(18px,3vw,32px);
+}
+.article h3{
+  font-size:18px;
+  margin:22px 0 10px;
+  color:var(--brand);
+  padding-left:12px;
+  border-left:3px solid var(--brand);
+}
+.article h3:first-of-type{margin-top:6px;}
+.article p{color:var(--ink-2);}
+.article strong{color:var(--ink);}
+.pull{
+  border-left:3px solid var(--brand-2);
+  background:rgba(232,89,60,.06);
+  padding:12px 16px;
+  border-radius:0 10px 10px 0;
+  font-size:15.5px;
+  color:var(--ink);
+  margin:18px 0;
+}
+.data-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+  margin:14px 0 18px;
+}
+.data-table th,.data-table td{
+  border:1px solid var(--line-soft);
+  padding:8px 10px;
+  text-align:left;
+  vertical-align:top;
+}
+.data-table th{background:var(--bg-soft);color:var(--ink-3);font-weight:600;font-size:13px;}
+.data-table td{color:var(--ink-2);}
+.data-table td b{color:var(--ink);}
+
+/* 步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:12px;}
+.steps li{
+  counter-increment:step;
+  position:relative;
+  padding:14px 16px 14px 56px;
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-sm);
+  font-size:14.5px;
+  color:var(--ink-2);
+}
+.steps li::before{
+  content:counter(step);
+  position:absolute;
+  left:14px;
+  top:13px;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--brand);
+  color:#1a1305;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+}
+.steps li b{color:var(--ink);}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+.compare .col{
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius);
+  padding:16px;
+  background:var(--bg-card);
+}
+.compare .col.fact{border-top:3px solid var(--ok);}
+.compare .col.rumor{border-top:3px solid var(--hot);}
+.compare h3{font-size:15px;margin-bottom:10px;}
+.compare ul{padding-left:18px;font-size:14px;color:var(--ink-2);}
+
+/* FAQ */
+details.faq{
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-sm);
+  padding:0;
+  margin-bottom:10px;
+}
+details.faq summary{
+  cursor:pointer;
+  padding:13px 16px;
+  font-weight:600;
+  font-size:15px;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  color:var(--ink);
+}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{
+  content:"+";
+  color:var(--brand);
+  font-size:19px;
+  font-weight:700;
+  flex:0 0 auto;
+}
+details.faq[open] summary::after{content:"−";}
+details.faq .ans{
+  padding:0 16px 15px;
+  font-size:14.5px;
+  color:var(--ink-2);
+}
+details.faq[open]{border-color:var(--line);}
+
+/* 评论 */
+.comment{
+  display:grid;
+  grid-template-columns:38px minmax(0,1fr);
+  gap:12px;
+  padding:14px 0;
+  border-bottom:1px dashed var(--line-soft);
+}
+.comment:last-child{border-bottom:0;}
+.avatar{
+  width:38px;height:38px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:15px;color:#1a1305;
+  background:linear-gradient(135deg,#f5b731,#e8683c);
+}
+.comment .who{font-size:13.5px;color:var(--ink-3);margin-bottom:2px;}
+.comment .who b{color:var(--ink);font-size:14px;margin-right:6px;}
+.comment p{font-size:14.5px;color:var(--ink-2);margin:0;}
+.comment .ref{color:var(--brand);font-size:13px;}
+
+/* 资讯 */
+.news-item{
+  padding:13px 0;
+  border-bottom:1px dashed var(--line-soft);
+}
+.news-item:last-child{border-bottom:0;}
+.news-item h3{font-size:15.5px;margin-bottom:4px;}
+.news-item p{font-size:14px;color:var(--ink-2);margin:0;}
+
+/* 标签索引 */
+.tags{display:flex;flex-wrap:wrap;gap:9px;}
+.tags a{
+  border:1px solid var(--line);
+  background:var(--bg-soft);
+  padding:6px 13px;
+  border-radius:999px;
+  font-size:13.5px;
+  color:var(--ink-2);
+}
+.tags a:hover{border-color:var(--brand);color:var(--brand);text-decoration:none;}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:rank;}
+.rank li{
+  counter-increment:rank;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:11px 0;
+  border-bottom:1px dashed var(--line-soft);
+  font-size:14.5px;
+  color:var(--ink-2);
+}
+.rank li:last-child{border-bottom:0;}
+.rank li::before{
+  content:counter(rank);
+  flex:0 0 24px;
+  height:24px;
+  border-radius:6px;
+  background:var(--bg-soft);
+  border:1px solid var(--line);
+  color:var(--ink-3);
+  font-size:13px;
+  font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:2px;
+}
+.rank li:nth-child(1)::before{background:var(--brand);color:#1a1305;border-color:var(--brand);}
+.rank li b{color:var(--ink);}
+.rank li .score{margin-left:auto;color:var(--brand);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap;}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative;}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:7px;top:6px;bottom:6px;
+  width:2px;
+  background:var(--line);
+}
+.timeline li{
+  position:relative;
+  padding:0 0 16px 30px;
+  font-size:14.5px;
+  color:var(--ink-2);
+}
+.timeline li::before{
+  content:"";
+  position:absolute;
+  left:1px;top:7px;
+  width:12px;height:12px;
+  border-radius:50%;
+  background:var(--bg-card);
+  border:2px solid var(--brand);
+}
+.timeline li b{color:var(--ink);}
+.timeline time{color:var(--ink-3);font-size:12.5px;display:block;}
+
+/* 引语 */
+.quote{
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius);
+  background:linear-gradient(140deg,rgba(245,183,49,.08),transparent 60%),var(--bg-card);
+  padding:18px 20px;
+}
+.quote p{color:var(--ink);font-size:15.5px;margin-bottom:8px;}
+.quote span{font-size:13px;color:var(--ink-3);}
+
+/* 页脚 */
+footer.site{
+  border-top:1px solid var(--line);
+  background:#0a110d;
+  margin-top:20px;
+}
+.foot-in{
+  max-width:1240px;
+  margin:0 auto;
+  padding:34px var(--sp) 22px;
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:24px;
+}
+.foot-brand p{color:var(--ink-3);font-size:13.5px;margin:10px 0 0;max-width:24em;}
+.foot-col h4{font-size:13.5px;color:var(--ink-3);letter-spacing:1px;margin-bottom:10px;font-weight:600;}
+.foot-col a{display:block;color:var(--ink-2);font-size:13.8px;padding:3px 0;}
+.foot-col a:hover{color:var(--brand);}
+.foot-bottom{
+  border-top:1px solid var(--line-soft);
+  max-width:1240px;
+  margin:0 auto;
+  padding:14px var(--sp) 20px;
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+  font-size:12.8px;
+  color:var(--ink-3);
+}
+
+#toTop{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:70;
+  background:var(--brand);
+  color:#1a1305;
+  border:0;
+  border-radius:50%;
+  width:44px;height:44px;
+  font-size:18px;
+  font-weight:800;
+  cursor:pointer;
+  display:none;
+  box-shadow:var(--shadow);
+  font-family:var(--font);
+}
+#toTop.on{display:block;}
+
+@media (max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr);}
+  aside.side{position:static;order:2;}
+  .hero{grid-template-columns:minmax(0,1fr);}
+  .hero-visual{min-height:260px;order:-1;}
+  .foot-in{grid-template-columns:1fr 1fr;}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media (max-width:720px){
+  .head-in{position:relative;}
+  .menu-btn{display:inline-block;margin-left:auto;}
+  nav.main-nav{
+    display:none;
+    flex-basis:100%;
+    flex-direction:column;
+    padding:8px 0 4px;
+  }
+  nav.main-nav.open{display:flex;}
+  .head-actions{order:3;flex-basis:100%;}
+  .search-box{flex:1;}
+  .search-box input{width:100%;}
+  .grid-2,.grid-3,.compare{grid-template-columns:minmax(0,1fr);}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .foot-in{grid-template-columns:1fr;}
+  .hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .stat b{font-size:17px;}
+  .announce-in{font-size:12.5px;gap:8px;}
+  #toTop{bottom:14px;right:14px;width:40px;height:40px;}
+}
+@media (max-width:380px){
+  .hero-stats{grid-template-columns:1fr 1fr;}
+  .cat-grid{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .card,.media-card,.cat{transition:none;}
+  .card:hover,.media-card:hover,.cat:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce" role="region" aria-label="更新公告">
+    <div class="announce-in">
+      <span class="tag">今日线报</span>
+      <span><b>r星今日爆料</b> · 11月8日 07:40 更新：GTA Online 补丁 1.72 热修上线，夜总会补货冷却由 48 分钟调至 30 分钟；Newswire 尚未发稿。</span>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="head-in">
+      <a class="brand" href="/#top" aria-label="r星今日爆料首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#132019"/>
+          <path d="M13 16h15l5 15 5-15h13L38 50h-9z" fill="#f5b731"/>
+          <circle cx="49" cy="45" r="6" fill="#e8593c"/>
+        </svg>
+        <span>
+          <span class="brand-name">r星今日爆料</span>
+          <span class="brand-sub">版本 · 公告 · 传闻核对</span>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选内容</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类频道</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="head-actions">
+        <form class="search-box" id="searchForm" role="search">
+          <label for="searchInput" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">站内搜索</label>
+          <input id="searchInput" type="search" placeholder="搜条目 / 补丁号" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      </div>
+    </div>
+    <div class="search-msg" id="searchMsg" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<div id="top"></div>
+
+<section class="hero">
+  <div>
+    <span class="hero-kicker">2026年11月8日 · 版本与公告核对</span>
+    <h1>r星今日爆料：<em>先看补丁号，再谈传闻</em></h1>
+    <p class="hero-lead">把每天冒出来的 Rockstar 消息拆成三档：官方公告能对上原文的、第三方转述但缺原始出处的、纯社区猜测的。今日重点盯 GTA Online 1.72 热修与 GTA6 排期措辞。只认补丁号、公告日期与页面存档，截屏里的数字一律标待核。</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="/#latest">看今日更新清单</a>
+      <a class="btn btn-ghost" href="/#deep">读排期措辞比对</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>6</b><span>今日核对条目</span></div>
+      <div class="stat"><b>3</b><span>官方原文可查</span></div>
+      <div class="stat"><b>2</b><span>标记为推测级</span></div>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <svg viewBox="0 0 480 340" role="img" aria-label="补丁号与公告日期的核对示意图">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#1c2e22"/>
+          <stop offset="1" stop-color="#2a1a14"/>
+        </linearGradient>
+        <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f5b731" stop-opacity=".9"/>
+          <stop offset="1" stop-color="#f5b731" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <rect width="480" height="340" fill="url(#sky)"/>
+      <circle cx="368" cy="86" r="52" fill="#f5b731" opacity=".16"/>
+      <circle cx="368" cy="86" r="30" fill="#f5b731" opacity=".28"/>
+      <path d="M0 250 L90 196 L168 232 L252 168 L330 210 L410 160 L480 200 L480 340 L0 340 Z" fill="#0e1812"/>
+      <path d="M0 276 L110 232 L200 262 L300 214 L392 250 L480 224 L480 340 L0 340 Z" fill="#0a120d"/>
+      <g stroke="#2c4233" stroke-width="1">
+        <line x1="40" y1="300" x2="440" y2="300"/>
+        <line x1="60" y1="316" x2="420" y2="316"/>
+      </g>
+      <g font-family="monospace" font-size="13" fill="#c9dccd">
+        <text x="36" y="60">BUILD 1.72</text>
+        <text x="36" y="82" fill="#8da394">2026-11-05</text>
+        <text x="36" y="104" fill="#8da394">2.4 GB</text>
+      </g>
+      <g>
+        <rect x="250" y="42" width="180" height="26" rx="13" fill="none" stroke="#63c88b" stroke-width="1.4"/>
+        <text x="264" y="60" font-family="monospace" font-size="12" fill="#63c88b">原文可查</text>
+        <rect x="250" y="76" width="120" height="26" rx="13" fill="none" stroke="#e8683c" stroke-width="1.4"/>
+        <text x="264" y="94" font-family="monospace" font-size="12" fill="#e8683c">推测级</text>
+      </g>
+      <path d="M86 128 L86 200 L180 200" stroke="#f5b731" stroke-width="1.5" fill="none" opacity=".7"/>
+      <circle cx="180" cy="200" r="4" fill="#f5b731"/>
+      <circle cx="86" cy="128" r="4" fill="#f5b731"/>
+    </svg>
+    <div class="visual-badge">核对三件套：<b>构建号</b>、<b>发布日期</b>、<b>下载体积</b>，缺一项记待核。</div>
+  </div>
+</section>
+
+<div class="layout">
+
+  <main id="main">
+
+    <!-- 领域概览 -->
+    <section class="block" id="overview">
+      <div class="block-head">
+        <h2>领域概览：一条消息要过几道关</h2>
+        <span class="hint">信息分层标准</span>
+      </div>
+      <p style="color:var(--ink-2);font-size:15px;">Rockstar 的信息出口不多：Newswire 官网、官方支持页、发行商 Take-Two 财报电话会、各平台补丁说明。其余大多来自数据挖掘账号，例如 Tez2 与 GTA Series Videos 的转述。当天拿到一条消息，先判断它属于哪一层，再决定要不要写进清单。</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>官方公告层</h3>
+          <p>原文能在 rockstargames.com/newswire 或支持页找到，带发布日与署名。10 月 21 日的排期说明即属此层。</p>
+          <div class="meta"><span class="chip ok">可引用</span><span class="chip cool">需存档</span></div>
+        </div>
+        <div class="card">
+          <h3>平台补丁层</h3>
+          <p>SteamDB、PlayStation 更新记录给出的构建号与体积，可以量化验证。11 月 5 日 1.72 补丁三项数据齐全。</p>
+          <div class="meta"><span class="chip ok">可核对</span></div>
+        </div>
+        <div class="card">
+          <h3>社区推测层</h3>
+          <p>地图碎片、招聘岗位、配音表截图。10 月 28 日流传的 Vice City 地图拼接图没有来源，比例也对不上 2022 年素材。</p>
+          <div class="meta"><span class="chip hot">不采信</span><span class="chip warn">标注来源</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 精选内容推荐 -->
+    <section class="block" id="picks">
+      <div class="block-head">
+        <h2>本周精选：三条值得先读的线索</h2>
+        <span class="hint">按核对价值排序</span>
+      </div>
+      <div class="grid-3">
+        <a class="media-card" href="/#deep">
+          <img src="https://picsum.photos/seed/gta6window/480/300" width="480" height="300" loading="lazy" alt="排期文档与日历对照的示意图" style="object-fit:cover;">
+          <div class="body">
+            <h3>GTA6 排期措辞三次变化</h3>
+            <p>秋季、2027 年 3 月、待定，三种表述分别出现在哪份文件里。</p>
+            <div class="meta"><span class="chip">深度解析</span></div>
+          </div>
+        </a>
+        <a class="media-card" href="/#latest">
+          <img src="https://picsum.photos/seed/gtaonline172/480/300" width="480" height="300" loading="lazy" alt="游戏内车库场景的示意图" style="object-fit:cover;">
+          <div class="body">
+            <h3>GTA Online 1.72 热修细节</h3>
+            <p>夜总会补货冷却缩短到 30 分钟，葛洛夫街车库新增两个租赁位。</p>
+            <div class="meta"><span class="chip ok">已确认</span></div>
+          </div>
+        </a>
+        <a class="media-card" href="/#channels">
+          <img src="https://picsum.photos/seed/rdr2patch/480/300" width="480" height="300" loading="lazy" alt="服务器机房与在线人数面板的示意图" style="object-fit:cover;">
+          <div class="body">
+            <h3>RDR2 次世代补丁传闻复盘</h3>
+            <p>支持页只写了服务器合并，第三方转述却加上了 60 帧字样。</p>
+            <div class="meta"><span class="chip warn">转述</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="block" id="latest">
+      <div class="block-head">
+        <h2>最新更新：11月1日—11月8日</h2>
+        <span class="hint">逐条带日期与出处</span>
+      </div>
+      <ul class="tight-list">
+        <li>
+          <time>11-08</time>
+          <div class="txt"><b>GTA Online 1.72 热修</b><span>夜总会仓库补货冷却从 48 分钟调到 30 分钟，差事“夜生活回收”结算金额未变。</span></div>
+        </li>
+        <li>
+          <time>11-06</time>
+          <div class="txt"><b>Take-Two 三季度财报问答</b><span>CEO Strauss Zelnick 在 11 月 6 日电话会上称 GTA6 市场投入“按 2027 年 3 月准备”，未提具体日期。</span></div>
+        </li>
+        <li>
+          <time>11-05</time>
+          <div class="txt"><b>1.72 背景补丁推送</b><span>PS5 版本号 01.072.000，约 2.4 GB；Xbox Series 侧为 2.1 GB，新增葛洛夫街两处车库租赁位。</span></div>
+        </li>
+        <li>
+          <time>11-03</time>
+          <div class="txt"><b>Red Dead Online 服务器合并</b><span>欧洲与澳新区服合并后的延迟高峰从 96ms 升到 128ms，官方支持页只写“维护”，未给原因。</span></div>
+        </li>
+        <li>
+          <time>10-30</time>
+          <div class="txt"><b>支持页条目更新</b><span>RDR2 页面新增一条“在线服务调整”说明，未出现次世代或补丁字样。</span></div>
+        </li>
+        <li>
+          <time>10-28</time>
+          <div class="txt"><b>地图碎片图流传</b><span>六块拼接图在小红书与 Reddit 同步出现，原始上传账号已注销，图幅比例与 2022 年素材不符。</span></div>
+        </li>
+        <li>
+          <time>10-24</time>
+          <div class="txt"><b>Rockstar 招聘页新增七岗</b><span>其中动画师两名、发行协调两名、法务三名，地点在爱丁堡与纽约。</span></div>
+        </li>
+        <li>
+          <time>10-21</time>
+          <div class="txt"><b>Newswire 排期说明</b><span>原文把 GTA6 窗口写成 2027 年 3 月 19 日，当天被 Wayback Machine 收录，可查存档。</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="block" id="channels">
+      <div class="block-head">
+        <h2>分类入口：按你关心的对象找</h2>
+        <span class="hint">10 个频道</span>
+      </div>
+      <div class="cat-grid">
+        <a class="cat" href="/#deep"><b>GTA6 发售窗口</b><span>排期措辞与财报口径</span></a>
+        <a class="cat" href="/#latest"><b>GTA Online 补丁号</b><span>1.72 及历史构建记录</span></a>
+        <a class="cat" href="/#guide"><b>夜总会仓库经营</b><span>补货冷却与收益核算</span></a>
+        <a class="cat" href="/#rank"><b>传闻可信度榜</b><span>本周五条线索分级</span></a>
+        <a class="cat" href="/#deep"><b>Vice City 地图考证</b><span>碎片拼接与比例对照</span></a>
+        <a class="cat" href="/#news"><b>RDR2 次世代补丁</b><span>支持页与转述差异</span></a>
+        <a class="cat" href="/#faq"><b>数据挖掘账号辨识</b><span>Tez2 等账号的引用方式</span></a>
+        <a class="cat" href="/#comments"><b>玩家实测反馈</b><span>车库、延迟、结算</span></a>
+        <a class="cat" href="/#timeline"><b>公告时间线</b><span>10 月 21 日至今</span></a>
+        <a class="cat" href="/#tags"><b>关键词索引</b><span>按构件与版本查</span></a>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="block" id="deep">
+      <div class="block-head">
+        <h2>深度解析：排期措辞比爆料日期更能说明问题</h2>
+        <span class="hint">全页唯一主体阅读区</span>
+      </div>
+      <article class="article">
+        <p>一条能站住的判断：<strong>Rockstar 对 GTA6 的公开表述已经从“时间点”退到“财年区间”，这比任何单一爆料都更能反映项目节奏。</strong>支持它的不是某一句话，而是三份文件在 30 天内的措辞差异，任何人都能对照原文逐字核。</p>
+
+        <h3>一、三次表述的原文对照</h3>
+        <p>把 2026 年 10 月至 11 月的三份材料并排看，措辞变化有明确节点，不是网友总结出来的感觉。</p>
+        <table class="data-table">
+          <thead>
+            <tr><th>日期</th><th>材料</th><th>原文措辞</th><th>可核对项</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10-21</td><td>Newswire 排期说明</td><td>“2027 年 3 月 19 日”</td><td><b>具体日期</b>，Wayback 有存档</td></tr>
+            <tr><td>11-06</td><td>Take-Two 财报问答</td><td>“按 2027 年 3 月准备市场投入”</td><td><b>月份区间</b>，电话会录音可回听</td></tr>
+            <tr><td>11-06</td><td>同一场问答的追加提问</td><td>“不评论具体日”</td><td><b>拒答</b>，官方实录第 14 页</td></tr>
+          </tbody>
+        </table>
+        <p>同一家公司，相隔 16 天，从给出日变成只给月再变成拒答日期，方向是一致的：公开口径在往回收。这个判断可以被反驳——如果 12 月 Newswire 再次给出具体日期，它就被推翻。反驳条件写得越清楚，判断越有用。</p>
+
+        <h3>二、社区爆料的证据缺口在哪</h3>
+        <p>10 月 28 日那张六块地图拼接图，被转发时配的文字是“Vice City 完整地图泄露”。核对下来有三个硬缺口：原始上传账号已注销，无法回溯发布时间；图幅长宽比约为 1.42:1，而 2022 年 9 月泄露素材里的城市区块是 1.28:1；图中桥梁位置与官方 2023 年预告片第 48 秒画面不一致。三项里有任意一项说不清，就只能记为推测级。</p>
+        <div class="pull">判断可以拆成可核对的结构：<strong>来源是否可回溯 → 比例是否自洽 → 是否与已发布画面冲突</strong>。三步都过，才升级为待证事实。三步里只过一步的，连传闻都算不上，只是图。</div>
+        <p>对照之下，11 月 5 日的 1.72 补丁三项数据齐全：构建号 01.072.000、发布日期 11 月 5 日、体积 2.4 GB，PS5 更新记录与 SteamDB 都能交叉。这才是官方公告与平台补丁层的价值——不需要信任任何账号，数字自己对得上。</p>
+
+        <h3>三、招聘岗位不能当上线时间证据</h3>
+        <p>10 月 24 日 Rockstar 招聘页新增七个岗位，被解读成“GTA6 进入收尾”。实际情况是：动画师两名、发行协调两名、法务三名。法务与发行集中在项目后期确实常见，但两名动画师也可能是 GTA Online 后续内容。用岗位数量推上线时间，样本太少，方向也不唯一。</p>
+        <p>可核对的部分是地点与时间：爱丁堡与纽约两地挂出，页面显示发布日为 10 月 24 日。岗位描述里出现“季度内容更新”字样，更贴近线上模式而非单机主线。把这条从“排期证据”降级为“团队补人”，信息才不会被放大。</p>
+
+        <h3>四、规则前后变化：线上补货机制</h3>
+        <p>夜总会仓库补货冷却这次从 48 分钟调至 30 分钟，是近三个月第二次调整。9 月中旬的 1.70 补丁曾把冷却从 36 分钟延长到 48 分钟，理由是“平衡单人收益”。11 月 5 日又调回 30 分钟，官方补丁说明只写了“调整部分资产冷却”，没有解释方向。两次调整之间，单人玩家每小时净收益从约 21 万游戏币降到 16 万，再回到约 24 万。数字来自玩家自建的结算表，样本 40 组，误差约 5%。</p>
+        <p>这条变化能解释一部分社区情绪：不是补丁本身多大，而是方向反复。任何声称“官方要削弱单人玩法”的说法，目前只能算推测，因为补丁说明没给理由。事实是冷却变了，回应是官方未说明，转述是玩家社区解读，推测是意图判断——四层分开写，读者才不会混。</p>
+      </article>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="block" id="guide">
+      <div class="block-head">
+        <h2>体验指南：自己核一条爆料的四步</h2>
+        <span class="hint">适用于任何平台</span>
+      </div>
+      <ol class="steps">
+        <li><b>先找原始页面。</b>Newswire、支持页、平台补丁说明三者至少打开一个。转述里出现的引号句子，回到原文逐字比对，改一个字都算转述。</li>
+        <li><b>记下三项数字。</b>构建号、发布日期、体积。1.72 对应 01.072.000 与 2.4 GB，若某条消息只有“大更新”没有数字，直接放进待核区。</li>
+        <li><b>查存档时间。</b>Wayback Machine 收录时间能证明页面何时存在。10 月 21 日排期说明当天被收录，这条时间链是硬的。</li>
+        <li><b>写明反驳条件。</b>给自己留一句“如果出现什么，这条判断就错”。写不出来，说明这条判断本身没信息量。</li>
+      </ol>
+      <div class="compare" style="margin-top:18px;">
+        <div class="col fact">
+          <h3>事实侧（可对照原文）</h3>
+          <ul>
+            <li>10-21 Newswire 给出 2027 年 3 月 19 日</li>
+            <li>11-05 补丁 1.72，体积 2.4 GB</li>
+            <li>11-06 财报问答拒答具体日</li>
+            <li>10-30 支持页只写服务器调整</li>
+          </ul>
+        </div>
+        <div class="col rumor">
+          <h3>传闻侧（缺原始出处）</h3>
+          <ul>
+            <li>地图碎片拼出完整 Vice City</li>
+            <li>RDR2 将出 60 帧次世代补丁</li>
+            <li>招聘七岗意味着主线收尾</li>
+            <li>补丁方向反复是“削弱单人”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 可信度分层榜单 -->
+    <section class="block" id="rank">
+      <div class="block-head">
+        <h2>本周传闻可信度榜</h2>
+        <span class="hint">11月1日—11月8日</span>
+      </div>
+      <ol class="rank">
+        <li><span><b>1.72 热修冷却调整</b>：三项数据齐全，支持页可查。</span><span class="score">92</span></li>
+        <li><span><b>财报问答拒答具体日</b>：录音与实录均在，官方口径明确。</span><span class="score">88</span></li>
+        <li><span><b>服务器合并延迟上升</b>：玩家自测 128ms，样本 26 组，方向一致。</span><span class="score">71</span></li>
+        <li><span><b>招聘七岗指向收尾</b>：岗位真实，但推论方向不唯一。</span><span class="score">46</span></li>
+        <li><span><b>Vice City 地图碎片</b>：来源不可回溯，比例冲突。</span><span class="score">18</span></li>
+      </ol>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="block" id="news">
+      <div class="block-head">
+        <h2>相关资讯速览</h2>
+        <span class="hint">不重复上面条目</span>
+      </div>
+      <div class="news-item">
+        <h3>SteamDB 抓取到 1.72 的 Xbox 体积差异</h3>
+        <p>Xbox Series 侧为 2.1 GB，比 PS5 少约 0.3 GB，差异集中在车库纹理包。SteamDB 在 11 月 5 日 18:22 记录到该构建。</p>
+      </div>
+      <div class="news-item">
+        <h3>Red Dead Online 区服合并后的高峰延迟</h3>
+        <p>11 月 3 日合并后，欧洲玩家在 20:00—22:00 的延迟从 96ms 升至 128ms。官方支持页只写“维护”，没有说明原因。</p>
+      </div>
+      <div class="news-item">
+        <h3>Take-Two 财报里的一句市场投入表述</h3>
+        <p>11 月 6 日电话会第 9 页写“按 2027 年 3 月准备市场投入”，与 10 月 21 日 Newswire 的具体日期不完全同步，是否代表微调尚无官方解释。</p>
+      </div>
+      <div class="news-item">
+        <h3>数据挖掘账号 Tez2 的一次撤回</h3>
+        <p>11 月 2 日 Tez2 发文称发现新载具代码，两小时后删除并说明是旧版本残留。这条撤回本身比原爆料更值得记录。</p>
+      </div>
+    </section>
+
+    <!-- 时间线 -->
+    <section class="block" id="timeline">
+      <div class="block-head">
+        <h2>公告时间线：10月21日至今</h2>
+        <span class="hint">只收官方与平台记录</span>
+      </div>
+      <ul class="timeline">
+        <li><time>2026-11-08 07:40</time><b>1.72 热修上线</b>，夜总会补货冷却改为 30 分钟，Newswire 未发稿。</li>
+        <li><time>2026-11-06</time><b>Take-Two 三季度电话会</b>，市场投入表述按 2027 年 3 月准备，拒答具体日。</li>
+        <li><time>2026-11-05 18:22</time><b>1.72 背景补丁推送</b>，PS5 构建 01.072.000，体积 2.4 GB。</li>
+        <li><time>2026-11-03</time><b>Red Dead Online 区服合并</b>，官方支持页标注维护完成。</li>
+        <li><time>2026-10-30</time><b>支持页条目更新</b>，只涉及在线服务调整，无次世代字样。</li>
+        <li><time>2026-10-21</time><b>Newswire 排期说明</b>，GTA6 窗口写为 2027 年 3 月 19 日，当天被存档。</li>
+      </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block" id="faq">
+      <div class="block-head">
+        <h2>常见问题</h2>
+        <span class="hint">点开看核对依据</span>
+      </div>
+
+      <details class="faq">
+        <summary>GTA6 第三次延期公告是哪天发布的？</summary>
+        <div class="ans">Rockstar 官方 Newswire 在 2026 年 10 月 21 日发布过一份排期说明，把窗口表述从 2026 年秋季改写成 2027 年 3 月 19 日。该页面当天被 Wayback Machine 收录，目前仍可访问。第三次延期的说法在社区里流传，但原文并没有用“延期”这个词。</div>
+      </details>
+
+      <details class="faq">
+        <summary>GTA Online 11 月 5 日更新加了哪些资产？</summary>
+        <div class="ans">11 月 5 日的背景更新新增葛洛夫街两处车库租赁位，并调整了夜总会仓库的补货冷却，补丁号 1.72，PS5 侧下载体积约 2.4 GB。车库位置在葛洛夫街南段，租赁价格 12 万游戏币起，两处都能停放个人载具。</div>
+      </details>
+
+      <details class="faq">
+        <summary>社区流传的 Vice City 地图碎片是真是假？</summary>
+        <div class="ans">10 月 28 日出现的六块地图拼接图目前没有官方来源，原始上传账号已注销，图幅比例与 2022 年泄露素材不一致，还和 2023 年预告片第 48 秒的桥梁位置冲突。三项核对里只过零项，判定为推测级，暂不采信。</div>
+      </details>
+
+      <details class="faq">
+        <summary>RDR2 次世代补丁有没有原文公告？</summary>
+        <div class="ans">Rockstar 支持页 10 月 30 日条目只提到 Red Dead Online 的服务器合并，未出现次世代、60 帧或补丁编号字样。相关说法属于第三方转述，转述里也没有给原始链接。</div>
+      </details>
+
+      <details class="faq">
+        <summary>爆料里的版本号怎么自己核对？</summary>
+        <div class="ans">打开对应平台的补丁说明页面，比对构建号、发布日期与体积三项。1.72 对应 01.072.000 与 2.4 GB，三项对得上才算确认。只看到截图里数字、找不到平台记录的，记为待核，不要写进清单。</div>
+      </details>
+
+      <details class="faq">
+        <summary>官方招聘页能当作项目进度证据吗？</summary>
+        <div class="ans">招聘岗位只能说明团队在补人，无法推出上线时间。10 月 24 日挂出的七个岗位里，只有两个与动画相关，其余是发行与法务；岗位描述里出现“季度内容更新”字样，更贴近线上模式而非单机主线。</div>
+      </details>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="block" id="comments">
+      <div class="block-head">
+        <h2>玩家评论</h2>
+        <span class="hint">含反对意见</span>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">阿</div>
+        <div>
+          <div class="who"><b>阿岚_洛圣都</b>11-08 08:12</div>
+          <p><span class="ref">关于 1.72 补货冷却：</span>30 分钟这个数我实测了四轮，从空仓到满仓确实比 48 分钟快一截，单人一小时回到 23 万游戏币左右。但补丁说明写“调整部分资产冷却”，连方向都不提，这种写法挺糊的。</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">老</div>
+        <div>
+          <div class="who"><b>老周看财报</b>11-06 22:47</div>
+          <p><span class="ref">关于 11 月 6 日电话会：</span>“按 2027 年 3 月准备市场投入”和“2027 年 3 月 19 日发售”不是一回事，前者是预算节奏，后者才是日期。把两句混着读，容易得出没依据的结论。</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">小</div>
+        <div>
+          <div class="who"><b>小林不挖了</b>11-07 19:03</div>
+          <p><span class="ref">关于地图碎片：</span>那张图我拿 2023 年预告片对过桥的位置，对不上。反正我不会把没来源的拼接图当线索，转发里配的文字比图本身还离谱。</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">R</div>
+        <div>
+          <div class="who"><b>Red_Dead_老马</b>11-04 11:26</div>
+          <p><span class="ref">关于区服合并：</span>合并后晚上八点延迟从 95ms 跳到 128ms，跑商队任务掉了两次。支持页只写维护，我理解成没说，但确实影响手感。</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">T</div>
+        <div>
+          <div class="who"><b>Tez2观察员</b>11-02 23:15</div>
+          <p><span class="ref">关于 11 月 2 日那次撤回：</span>发现新载具代码两小时后删帖，说是旧版本残留。这种主动撤回反而让人更愿意看他的东西，至少错了他会说。</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">豆</div>
+        <div>
+          <div class="who"><b>豆子不玩了</b>11-05 20:40</div>
+          <p><span class="ref">关于 1.72 车库：</span>葛洛夫街两处租赁位价格 12 万起，我买了南段那处，停车位够但入口窄，大车倒进去要多打两把方向。补丁体积 2.4 GB，就为这个我觉得有点亏。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 补充板块：创作者引语 -->
+    <section class="block" id="quote">
+      <div class="block-head">
+        <h2>做内容的人怎么看这些料</h2>
+        <span class="hint">引语不代替证据</span>
+      </div>
+      <div class="grid-2">
+        <div class="quote">
+          <p>“我写一条 GTA6 消息之前，会先把 Newswire 存档链接贴进草稿，链接打不开就不发。读者要的是能自己点开的东西。”</p>
+          <span>—— B站 UP 主“洛圣都档案室”，11 月 4 日直播口述</span>
+        </div>
+        <div class="quote">
+          <p>“1.72 这种补丁最好写，三个数字摆出来就完了。难的是招聘岗位那种，你得忍住不去推上线时间。”</p>
+          <span>—— 小红书账号“R星补丁笔记”，11 月 6 日笔记</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关推荐标签 -->
+    <section class="block" id="tags">
+      <div class="block-head">
+        <h2>相关推荐</h2>
+        <span class="hint">按关键词找条目</span>
+      </div>
+      <div class="tags">
+        <a href="/#latest">GTA Online 1.72 补丁说明</a>
+        <a href="/#deep">GTA6 发售窗口 2027 年 3 月</a>
+        <a href="/#guide">夜总会仓库补货冷却</a>
+        <a href="/#news">RDR2 次世代补丁传闻</a>
+        <a href="/#rank">Vice City 地图碎片核对</a>
+        <a href="/#overview">数据挖掘账号可信度</a>
+        <a href="/#timeline">Take-Two 财报电话会</a>
+        <a href="/#guide">葛洛夫街车库租赁位</a>
+        <a href="/#faq">补丁构建号怎么查</a>
+        <a href="/#comments">Red Dead Online 延迟</a>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="side" aria-label="侧栏导航与速览">
+    <div class="panel">
+      <h3>栏目导航</h3>
+      <nav class="side-nav" id="sideNav">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">本周精选</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#rank">可信度榜</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#timeline">公告时间线</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">玩家评论</a>
+        <a href="/#quote">创作者引语</a>
+        <a href="/#tags">相关推荐</a>
+      </nav>
+    </div>
+    <div class="panel">
+      <h3>今日三件套</h3>
+      <p style="font-size:14px;color:var(--ink-2);margin-bottom:8px;"><b>构建号</b> 01.072.000</p>
+      <p style="font-size:14px;color:var(--ink-2);margin-bottom:8px;"><b>日期</b> 2026-11-05</p>
+      <p style="font-size:14px;color:var(--ink-2);margin-bottom:8px;"><b>体积</b> 2.4 GB（PS5）</p>
+      <p style="font-size:13px;color:var(--ink-3);margin:0;">三项对不上，记待核。</p>
+    </div>
+    <div class="panel">
+      <h3>本周待核线索</h3>
+      <ul class="tight-list" style="font-size:13.5px;">
+        <li><div class="txt"><b>Vice City 地图碎片</b><br><span>来源已注销</span></div></li>
+        <li><div class="txt"><b>RDR2 60 帧补丁</b><br><span>无原文公告</span></div></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="site">
+  <div class="foot-in">
+    <div class="foot-brand">
+      <a class="brand" href="/#top" aria-label="回到首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true" width="34" height="34">
+          <rect width="64" height="64" rx="14" fill="#132019"/>
+          <path d="M13 16h15l5 15 5-15h13L38 50h-9z" fill="#f5b731"/>
+          <circle cx="49" cy="45" r="6" fill="#e8593c"/>
+        </svg>
+        <span><span class="brand-name">r星今日爆料</span></span>
+      </a>
+      <p>把版本号、公告日期与社区说法分开放，每条线索标出能自己点开的出处。</p>
+    </div>
+    <div class="foot-col">
+      <h4>频道</h4>
+      <a href="/#latest">GTA Online 补丁号</a>
+      <a href="/#deep">GTA6 排期措辞</a>
+      <a href="/#news">RDR2 在线服务</a>
+      <a href="/#rank">传闻可信度</a>
+    </div>
+    <div class="foot-col">
+      <h4>工具</h4>
+      <a href="/#guide">四步核对法</a>
+      <a href="/#faq">构建号查询</a>
+      <a href="/#timeline">公告时间线</a>
+      <a href="/#tags">关键词索引</a>
+    </div>
+    <div class="foot-col">
+      <h4>说明</h4>
+      <a href="/#overview">信息分层标准</a>
+      <a href="/#comments">玩家反馈</a>
+      <a href="/#quote">创作者引语</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>示例数据说明：文中补丁号、体积与日期为演示用生成内容，实际以 Rockstar 官方页面为准。</span>
+    <span>更新时间 2026-11-08 · © 2026 r星今日爆料</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var msg = document.getElementById('searchMsg');
+  var targets = document.querySelectorAll('main section.block');
+
+  function clearHits(){
+    targets.forEach(function(s){ s.style.display=''; });
+    msg.classList.remove('on');
+    msg.textContent='';
+  }
+
+  if(form && input){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = input.value.trim().toLowerCase();
+      if(!q){ clearHits(); return; }
+      var hits = 0;
+      targets.forEach(function(s){
+        var text = s.textContent.toLowerCase();
+        if(text.indexOf(q) !== -1){ s.style.display=''; hits++; }
+        else { s.style.display='none'; }
+      });
+      msg.classList.add('on');
+      if(hits === 0){
+        msg.textContent = '没有找到与“' + input.value.trim() + '”匹配的板块，试试“补丁”“排期”“地图”“延迟”。';
+      } else {
+        msg.textContent = '找到 ' + hits + ' 个相关板块，已筛掉其余内容。清空搜索框再提交可恢复。';
+      }
+    });
+    input.addEventListener('input', function(){
+      if(input.value.trim()===''){ clearHits(); }
+    });
+  }
+
+  var sideLinks = document.querySelectorAll('#sideNav a');
+  var sections = document.querySelectorAll('main section.block');
+  function setActive(id){
+    sideLinks.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '/#' + id);
+    });
+  }
+  if('IntersectionObserver' in window && sections.length){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ setActive(en.target.id); }
+      });
+    }, {rootMargin:'-35% 0px -55% 0px', threshold:0});
+    sections.forEach(function(s){ obs.observe(s); });
+  }
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('on'); }
+    else { toTop.classList.remove('on'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var sticky = document.querySelector('.sticky-wrap');
+  function syncHeader(){
+    var h = sticky ? sticky.offsetHeight : 0;
+    document.documentElement.style.setProperty('--header-h', h + 'px');
+  }
+  syncHeader();
+  window.addEventListener('resize', syncHeader);
+})();
+</script>
+</body>
+          </html>
